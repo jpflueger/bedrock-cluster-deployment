@@ -12,3 +12,4 @@ variables:
   gitops_ssh_url: git@github.com:jpflueger/bedrock-cluster-manifests.git
   gitops_ssh_key_path: /Users/jupflueg/.ssh/bedrock-cluster-manifests
   gitops_path: "centralus"
+  gitops_url_branch: "main"
