@@ -1,0 +1,14 @@
+name: azure-mi
+source: 'https://github.com/jpflueger/bedrock'
+template: cluster/environments/azure-managed-identity
+version: feature/aks-managed-identity-roles
+variables:
+  acr_name: acrbedrockazuremi
+  cluster_name: aks-bedrock-azure-mi
+  dns_prefix: aks-bedrock-azure-mi
+  resource_group_name: rg-jupflueg-bedrock-azure-mi
+  ssh_public_key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC7neLT8imMK2pZJbZ9zZJc8K0xBc9jRXDuO/FuKtxSuS+Uw7kSPzTRQ+T4NHav8mLtYA7KWJ8t1NXUuId0wyUCTde/gZ9ysdyJ42Gdrj9J5Igm2uwFRFaEohKXlDPIxzM0YtUkBKnmk/u1R8R0A4swVbxdn8txB9pCcQCvzpsN+WHxecpCsH1BmDKQONjreSVX21LSO2bd2OiQ2APHCbKsqDbQNujHGKs8ngxaP0eN+9VrGGc6VT6HfsonM1nJudLl31rPDjVYE8vlOacbfi0y0jroENamnEBx6xRMGLDALBSs50EpDknplrYboSIeCWiBDu3iI+vgcml2a9g2vtrwFMf51itP8S4znGlwOBgJ/jJwrsd5I/6T8ssLQKUaObcBusroCYDhARsJymq6vxXlTOr8ruXbwXiCiLSK+CaAJcX8/n/lWAM0vvYLPiP4ntOHVMwLzMovGNJzo1YiE0mOGf0+vksNRvCks25kTkcnT0q3UQ5cWx590u+6+XgQsKDhmY2PtTqq77tyfzVUOErZ8yFHTcZu0N3G+ItyoZo1+6bBPE613SD4IeqaQKuafa9eUvA8mEyOWVJXOU0tWF868nRnDiGGUliBHXpfkpyr5FahTypL3pdjE0Lbd63JmJv31Rsi/i18dozMESHl/JHMmlIpfeiZM/9Wn57VyTR5uw== jupflueg@Justins-MBP.dns.j12r.local
+  vnet_name: vnet-bedrock-azure-mi
+  gitops_ssh_url: git@github.com:jpflueger/bedrock-cluster-manifests.git
+  gitops_ssh_key_path: /Users/jupflueg/.ssh/bedrock-cluster-manifests
+  gitops_path: "centralus"
